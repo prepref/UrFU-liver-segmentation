@@ -1,4 +1,4 @@
 # UrFU-liver-segmentation
 
-Доступ к датасету ограничен!
+Датасет:  
 https://www.kaggle.com/datasets/popovvasily/train-data
