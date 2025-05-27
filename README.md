@@ -1,4 +1,4 @@
 # Датасет
 https://www.kaggle.com/datasets/popovvasily/train-data
-# Ноутбук обучнием модели
+# Ноутбук с обучением модели
 - final-notebook.ipynb
