@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liver Tumor SVG Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+	<script src="/libs/svg.draggable.js"></script>
+
+    <h1 style="text-align:center;">Редактор SVG-контуров</h1>
+    <div id="editor" style="position: relative; display: flex; justify-content: center;">
+      <img src="/result_0.jpg" id="baseImage" />
+      <div class="svg" id="svgContainer" style="position: absolute; top: 0; left: 0;"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  </body>
+</html>

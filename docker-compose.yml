@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  model-api:
+    build: ./model-api
+    volumes:
+      - shared_img_data:/app/img
+    ports:
+      - "8000:8000"
+    environment:
+      - RESULTS_DIR=/app/img
+
+  svg-liver-editor:
+    build: ./svg-liver-editor
+    ports:
+      - "80:80"
+    volumes:
+      - shared_img_data:/usr/share/nginx/html/img
+
+volumes:
+  shared_img_data:
+    driver: local
