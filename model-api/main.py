@@ -20,7 +20,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["*"], 
     allow_headers=["*"], 
 )
 
@@ -76,6 +76,7 @@ async def predict_image(file: UploadFile = File(...)):
             dst = os.path.join(final_dir, f"{fname}")
             shutil.copy2(src, dst)
             logger.info(f"Copied {src} to {dst}")
+
 
         shutil.rmtree(temp_dir)
 
